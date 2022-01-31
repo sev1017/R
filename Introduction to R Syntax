@@ -1,0 +1,8 @@
+---
+title: "Introduction to R Syntax:Calculations"
+output: html_notebook
+---
+```{r}
+25*4 + 9/3
+```
+Output: [1] 103
