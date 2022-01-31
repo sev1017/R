@@ -1,8 +1,77 @@
 ---
-title: "Introduction to R Syntax:Calculations"
+title: "Introduction to R Syntax: Calculations"
 output: html_notebook
 ---
 ```{r}
 25*4 + 9/3
 ```
 Output: [1] 103
+---
+
+---
+title: "Introduction to R Syntax: Comments"
+output: html_notebook
+---
+```{r}
+3 * 3 * 3
+# The line of code inside notebook.Rmd is computing the volume to a cube
+```
+Output: 3 * 3 * 3
+[1] 27
+# The line of code inside notebook.Rmd is computing the volume to a cube
+---
+
+Data Types
+ 
+Numeric: Any number with or without a decimal point: 23, 0.03and the numeric null value NA.
+
+Character: Any grouping of characters on your keyboard (letters, numbers, spaces, symbols, etc.) or text. 
+Most strings are surrounded by single quotes: ' ... ' or double quotes " ... ", though we prefer single quotes. 
+Sometimes you will hear this type referred to as “string.”
+
+Logical: This data type only has two possible values— either TRUE or FALSE (without quotes). 
+It’s helpful to think of logical types or booleans as on and off switches or as the answers to a “yes” or “no” question.
+
+Vectors: A list of related data that is all the same type.
+NA: This data type represents the absence of a value, and 
+is represented by the keyword NA (without quotes) but it has its own significance in the context of the different types.
+That is there is a numeric NA, a character NA, and a logical NA.
+
+---
+title: "Introduction to R Syntax: Data Types"
+output: html_notebook
+---
+```{r}
+class(2) # nurmeric
+class('hello') # character
+class('23') # character
+class(FALSE) # logical
+class(NA) # logical 
+
+print('Sina') #character
+print(23) #nurmeric
+print('23') #character
+```
+Output: class(2) # nurmeric
+[1] "numeric"
+numeric
+class('hello') # character
+[1] "character"
+character
+class('23') # character
+[1] "character"
+character
+class(FALSE) # logical
+[1] "logical"
+logical
+class(NA) # logical 
+[1] "logical"
+logical
+print('Sina') #character
+[1] "Sina"
+print(23) #nurmeric
+[1] 23
+print('23') #character
+[1] "23"
+---
+
